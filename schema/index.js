@@ -1,5 +1,6 @@
 const { buildSchema } = require('graphql')
 
+// never return a password
 module.exports = buildSchema(`
 
 type User {
