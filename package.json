@@ -1,0 +1,28 @@
+{
+  "name": "module-tracker-backend",
+  "version": "1.0.0",
+  "description": "Backend for module tracker client",
+  "main": "index.js",
+  "repository": "https://github.com/Mastermind-Group/module-tracker-backend.git",
+  "author": "Mastermind Group <william.c.umstead@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.6",
+    "helmet": "^3.21.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}

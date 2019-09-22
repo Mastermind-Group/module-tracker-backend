@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_USER": "brellin",
+        "MONGO_PASSWORD": "0peLp6TrS1VkN76p",
+        "MONGO_DB": "module-tracker"
+    }
+}
