@@ -8,6 +8,8 @@ module.exports = {
 
         try {
 
+            if (args.inUser.username === undefined) throw new Error('Must have username')
+
             const check = await User.findOne({ username: args.inUser.username })
 
             if (check) {
@@ -45,7 +47,7 @@ module.exports = {
 
         const user = await User.findOne({ username })
 
-        if (!user) throw new Error(`'${username}' does not match a user in the database. Please try again.`)
+        if (!user || username === undefined) throw new Error(`'${username}' does not match a user in the database. Please try again.`)
 
         if (bcrypt.compareSync(password, user.password)) {
 
